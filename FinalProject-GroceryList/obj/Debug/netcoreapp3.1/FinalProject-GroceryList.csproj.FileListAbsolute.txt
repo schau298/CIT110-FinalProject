@@ -1,0 +1,12 @@
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.csprojAssemblyReference.cache
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.AssemblyInfoInputs.cache
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.AssemblyInfo.cs
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.csproj.CoreCompileInputs.cache
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/bin/Debug/netcoreapp3.1/FinalProject-GroceryList.deps.json
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/bin/Debug/netcoreapp3.1/FinalProject-GroceryList.runtimeconfig.json
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/bin/Debug/netcoreapp3.1/FinalProject-GroceryList.runtimeconfig.dev.json
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/bin/Debug/netcoreapp3.1/FinalProject-GroceryList.dll
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/bin/Debug/netcoreapp3.1/FinalProject-GroceryList.pdb
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.dll
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.pdb
+/Users/dill/Projects/FinalProject-GroceryList/FinalProject-GroceryList/obj/Debug/netcoreapp3.1/FinalProject-GroceryList.genruntimeconfig.cache
