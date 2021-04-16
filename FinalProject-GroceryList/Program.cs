@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -26,9 +26,9 @@ namespace FinalProject_GroceryList
     // *************************************************************
     // Application:     The Grocery Store
     // Author:          Schaub, Dylan
-    // Description:     This application adds up the cost of all the items and gives the user a Grand Total.
+    // Description:     This application adds up the cost of all the items and gives the user a Grand Total with Tax.
     // Date Created:    4/1/2021
-    // Date Revised:    4/10/2021
+    // Date Revised:    4/15/2021
     // *************************************************************
 
     public class Program
@@ -39,16 +39,9 @@ namespace FinalProject_GroceryList
         /// <param name="args"></param>
 
         
-        public int itemQuantity1;
-        public int itemQuantity2;
-        public int itemQuantity3;
-        public int itemQuantity4;
-        public int itemQuantity5;
-        public int itemQuantity6;
-        public int itemQuantity7;
-        public int itemQuantity8;
-        public int itemQuantity9;
-        public int itemQuantity10;
+    
+        
+
 
         static void Main(string[] args)
         {
@@ -372,112 +365,158 @@ namespace FinalProject_GroceryList
         /// ************************************************
         /// </summary>
         /// <param name="Products"></param>
-       
+
+
+   
+        
+
+
+
         public static void SelectProducts(List<Product> products)
         {
-            var p = new Program();
-
-            for (p.itemQuantity1 = 0; p.itemQuantity1 <1;p.itemQuantity1++)
-            {
-                Console.WriteLine("\n\nEnter Gallons of Milk Needed:\t");
-                p.itemQuantity1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tGallons Milk ordered: " + p.itemQuantity1);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity1 * 1));
-                
-
-            }
-            for (p.itemQuantity2 = 0; p.itemQuantity2 < 1; p.itemQuantity2++)
-            {
-                Console.WriteLine("\n\nEnter how many Dozen Eggs you Need:\t");
-                p.itemQuantity2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tDozen Eggs Ordered: " + p.itemQuantity2);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity2 * 2));
-            }
+         int itemQuantity1;
+         int itemQuantity2;
+         int itemQuantity3;
+        int itemQuantity4;
+        int itemQuantity5;
+         int itemQuantity6;
+         int itemQuantity7;
+         int itemQuantity8;
+        int itemQuantity9;
+         int itemQuantity10;
             
-            for (p.itemQuantity3 = 0; p.itemQuantity3 < 1; p.itemQuantity3++)
-            {
-                Console.WriteLine("\n\nEnter how many Avocados you Need:\t");
-                p.itemQuantity3 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tAvocados Ordered: " + p.itemQuantity3);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity3 * 3));
-            }
+                for (itemQuantity1 = 0; itemQuantity1 < 1; itemQuantity1++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter Gallons of Milk Needed:   ");
+                    itemQuantity1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tGallons Milk ordered: " + itemQuantity1);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity1 * 1));
+                    Console.WriteLine("\t ******************************");
 
-            for (p.itemQuantity4 = 0; p.itemQuantity4 < 1; p.itemQuantity4++)
-            {
-                Console.WriteLine("\n\nEnter how many bags of chicken Nuggets you Need:\t");
-                p.itemQuantity4 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tBags of Chicken Nuggets Ordered: " + p.itemQuantity4);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity4 * 4));
-            }
-            
-            for (p.itemQuantity5 = 0; p.itemQuantity5 < 1; p.itemQuantity5++)
-            {
-                Console.WriteLine("\n\nEnter how many Two Liters of Soda you Need:\t");
-                p.itemQuantity5 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tTwo Liters of Soda Ordered: " + p.itemQuantity5);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity5* 5));
-            }
+                }
+                for (itemQuantity2 = 0; itemQuantity2 < 1; itemQuantity2++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many Dozen Eggs you Need:  ");
+                    itemQuantity2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tDozen Eggs Ordered: " + itemQuantity2);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity2 * 2));
+                    Console.WriteLine("\t ******************************");
+                }
 
-            for (p.itemQuantity6 = 0; p.itemQuantity6 < 1; p.itemQuantity6++)
-            {
-                Console.WriteLine("\n\nEnter how many Pepperoni Pizzas you Need:\t");
-                p.itemQuantity6 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tPepperoni Pizzas Ordered: " + p.itemQuantity6);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity6 * 6));
-            }
+                for (itemQuantity3 = 0; itemQuantity3 < 1; itemQuantity3++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many Avocados you Need:  ");
+                    itemQuantity3 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tAvocados Ordered: " + itemQuantity3);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity3 * 3));
+                    Console.WriteLine("\t ******************************");
+                }
 
-            for (p.itemQuantity7 = 0; p.itemQuantity7 < 1; p.itemQuantity7++)
-            {
-                Console.WriteLine("\n\nEnter how many tubs of IceCream do you Need:\t");
-                p.itemQuantity7 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tIceCream Tubs Ordered: " + p.itemQuantity7);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity7 * 7));
-            }
+                for (itemQuantity4 = 0; itemQuantity4 < 1; itemQuantity4++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many bags of chicken Nuggets you Need:  ");
+                    itemQuantity4 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tBags of Chicken Nuggets Ordered: " + itemQuantity4);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity4 * 4));
+                    Console.WriteLine("\t ******************************");
+                }
 
-            for (p.itemQuantity8 = 0; p.itemQuantity8 < 1; p.itemQuantity8++)
-            {
-                Console.WriteLine("\n\nEnter how many bags of Popcorn you Need:\t");
-                p.itemQuantity8 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tBags of Popcorn Ordered: " + p.itemQuantity8);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity8 * 8));
-            }
+                for (itemQuantity5 = 0; itemQuantity5 < 1; itemQuantity5++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many Two Liters of Soda you Need:  ");
+                    itemQuantity5 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tTwo Liters of Soda Ordered: " + itemQuantity5);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity5 * 5));
+                    Console.WriteLine("\t ******************************");
+                }
 
-            for (p.itemQuantity9 = 0; p.itemQuantity9 < 1; p.itemQuantity9++)
-            {
-                Console.WriteLine("\n\nEnter how much pounds of Beef you Need:\t");
-                p.itemQuantity9 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tPound of Beef Ordered: " + p.itemQuantity9);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity9 * 9));
-            }
+                for (itemQuantity6 = 0; itemQuantity6 < 1; itemQuantity6++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many Pepperoni Pizzas you Need:  ");
+                    itemQuantity6 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tPepperoni Pizzas Ordered: " + itemQuantity6);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity6 * 6));
+                    Console.WriteLine("\t ******************************");
+                }
 
-            for (p.itemQuantity10 = 0; p.itemQuantity10 < 1; p.itemQuantity10++)
-            {
-                Console.WriteLine("\n\nEnter how many filets of Salmon you Need:\t");
-                p.itemQuantity10 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\n\n\t ******************************");
-                Console.WriteLine("\tFilets of Salmon Ordered: " + p.itemQuantity10);
-                Console.WriteLine("\t ******************************");
-                Console.WriteLine("\tCost:  $" + (p.itemQuantity10 * 10));
-            }
-            
+                for (itemQuantity7 = 0; itemQuantity7 < 1; itemQuantity7++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many tubs of IceCream do you Need:  ");
+                    itemQuantity7 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tIceCream Tubs Ordered: " + itemQuantity7);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity7 * 7));
+                    Console.WriteLine("\t ******************************");
+                }
+
+                for (itemQuantity8 = 0; itemQuantity8 < 1; itemQuantity8++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many bags of Popcorn you Need:  ");
+                    itemQuantity8 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tBags of Popcorn Ordered: " + itemQuantity8);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity8 * 8));
+                    Console.WriteLine("\t ******************************");
+                }
+
+                for (itemQuantity9 = 0; itemQuantity9 < 1; itemQuantity9++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how much pounds of Beef you Need:  ");
+                    itemQuantity9 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tPound of Beef Ordered: " + itemQuantity9);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity9 * 9));
+                    Console.WriteLine("\t ******************************");
+                }
+
+                for (itemQuantity10 = 0; itemQuantity10 < 1; itemQuantity10++)
+                {
+                    Console.WriteLine("------------------------------------------------------------");
+                    Console.WriteLine("\n\nEnter how many filets of Salmon you Need:  ");
+                    itemQuantity10 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("\n\n\t ******************************");
+                    Console.WriteLine("\tFilets of Salmon Ordered: " + itemQuantity10);
+                    Console.WriteLine("\t ******************************");
+                    Console.WriteLine("\n\t ******************************");
+                    Console.WriteLine("\tCost:  $" + (itemQuantity10 * 10));
+                    Console.WriteLine("\t ******************************");
+                }
+              
+
+
             DisplayContinuePrompt();
 
 
@@ -489,24 +528,34 @@ namespace FinalProject_GroceryList
             /// *              Order Products                  *
             /// ************************************************
             /// </summary>
-
+            Console.WriteLine("\n\n*************************************");
             Console.WriteLine("Order Review & Cost Summary:");
+            Console.WriteLine();
             Console.WriteLine("\ty - Place Order");
+            Console.WriteLine();
             Console.WriteLine("\tn - Cancel Order");
             Console.Write("Choose: ");
-
             switch (Console.ReadLine())
             {
                 case "y":
+                    double totalCost = (itemQuantity1 * 1 + itemQuantity2 * 2 + itemQuantity3 * 3 + itemQuantity4 * 4 + itemQuantity5 * 5 + itemQuantity6 * 6 + itemQuantity7 * 7 + itemQuantity8 * 8 + itemQuantity9 * 9 + itemQuantity10 * 10);
+                    Console.WriteLine("\n\n\t\t*************************************");
+                    Console.WriteLine("\t\t Total Cost  $:" + totalCost);
+                    double addTax = (totalCost * 0.06);
+                    double CostwithTax = (totalCost + addTax);
+                    Console.WriteLine("\t\t Total Cost w/Tax: " + CostwithTax);
+                    Console.WriteLine("\n\t\t*************************************");
 
-                    Console.WriteLine("\t\t Total Cost: ");
                     break;
                 case "n":
-                    Console.WriteLine("Sorry to hear that...");
+                    Console.WriteLine("Thanks for shopping anyway...");
                     break;
             }
-
-            Console.WriteLine("\n\tSuccess! Your order has been placed!");
+            Console.WriteLine("\n\n\t\t*************************************");
+            Console.WriteLine("\n\t\tSuccess! Your order has been placed!");
+            Console.WriteLine("\t\tIt will be ready for pick up in 30 minutes...");
+            Console.WriteLine("\n\t\t*************************************");
+            Console.WriteLine();
             DisplayMenuPrompt("Store Menu");
         }
 
